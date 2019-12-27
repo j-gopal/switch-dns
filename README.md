@@ -61,4 +61,3 @@ To-Do List
 ----------
 - Allow new DNS groups to be added on the fly: `switch-dns add <group>`
 - Find a way to alias `python switch_dns.py ...` to simply `switch-dns ...` in the command line
-- Add setup.py
