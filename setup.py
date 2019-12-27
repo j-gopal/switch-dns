@@ -4,7 +4,7 @@ with open("README.md") as f:
     readme = f.read()
 
 setup(
-    name="switch-dns",
+    name="switch_dns",
     version="1.0.0",
     description="For directly setting the DNS servers being used on your machine.",
     long_description=readme,
