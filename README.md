@@ -8,8 +8,8 @@ What is this for?
 
 Say you were using [Google's Public DNS](https://en.wikipedia.org/wiki/Google_Public_DNS) (8.8.8.8) as your main DNS for both IPv4 and IPv6:
 
-```batch
-C:\Users\Username>switch-dns get /curr
+```
+C:\Users\username>python switch_dns.py get /curr
 IPv6 Primary DNS: 2001:4860:4860::8888
 IPv6 Reserve DNS: 2001:4860:4860::8844
 IPv4 Primary DNS: 8.8.8.8
@@ -18,8 +18,8 @@ IPv4 Reserve DNS: 8.8.4.4
 
 What if there were [faster options](https://www.dnsperf.com/#!dns-resolvers) available to you? You could, for instance, set your DNS of choice to [Cloudflare's 1.1.1.1](https://en.wikipedia.org/wiki/1.1.1.1) like so, from an elevated command prompt:
 
-```batch
-C:\Users\Username>switch-dns set -G cloudflare
+```
+C:\Users\username>python switch_dns.py set -G cloudflare
 Configured IPv6 Primary DNS to 2606:4700:4700::1111
 Configured IPv6 Reserve DNS to 2606:4700:4700::1001
 Configured IPv4 Primary DNS to 1.1.1.1
@@ -37,8 +37,8 @@ It's not too surprising if this page doesn't load; the fact that this site and t
 
 Well, with another session in an elevated command prompt, this is easily fixable!
 
-```batch
-C:\Users\Username>switch-dns set -G /prev
+```
+C:\Users\username>python switch_dns.py set -G /prev
 Configured IPv6 Primary DNS to 2001:4860:4860::8888
 Configured IPv6 Reserve DNS to 2001:4860:4860::8844
 Configured IPv4 Primary DNS to 8.8.8.8
@@ -49,8 +49,8 @@ After using `switch-dns` for the first time, your previous DNS configuration sho
 
 Alternatively, you could manually choose to use one of the other services available:
 
-```batch
-C:\Users\Username>switch-dns set -G quad9
+```
+C:\Users\username>python switch_dns.py set -G quad9
 Configured IPv6 Primary DNS to 2620:fe::fe
 Configured IPv6 Reserve DNS to 2620:fe::9
 Configured IPv4 Primary DNS to 9.9.9.9
@@ -60,4 +60,5 @@ Configured IPv4 Reserve DNS to 149.112.112.112
 To-Do List
 ----------
 - Allow new DNS groups to be added on the fly: `switch-dns add <group>`
+- Find a way to alias `python switch_dns.py ...` to simply `switch-dns ...` in the command line
 - Add setup.py
