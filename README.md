@@ -16,9 +16,7 @@ IPv4 Primary DNS: 8.8.8.8
 IPv4 Reserve DNS: 8.8.4.4
 ```
 
-What if there were [faster options](https://www.dnsperf.com/#!dns-resolvers) available to you?
-
-You could, for instance, set your DNS of choice to [Cloudflare's 1.1.1.1](https://en.wikipedia.org/wiki/1.1.1.1) like so, from an elevated command prompt:
+What if there were [faster options](https://www.dnsperf.com/#!dns-resolvers) available to you? You could, for instance, set your DNS of choice to [Cloudflare's 1.1.1.1](https://en.wikipedia.org/wiki/1.1.1.1) like so, from an elevated command prompt:
 
 ```batch
 C:\Users\Username>switch-dns set -G cloudflare
