@@ -45,6 +45,8 @@ Configured IPv4 Primary DNS to 8.8.8.8
 Configured IPv4 Reserve DNS to 8.8.4.4
 ```
 
+After using `switch-dns` for the first time, your previous DNS configuration should be stored in `dns_groups.json`. This allows you to view and roll back to previous configurations, if you so desire.
+
 Alternatively, you could manually choose to use one of the other services available:
 
 ```batch
