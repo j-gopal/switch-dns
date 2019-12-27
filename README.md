@@ -1,11 +1,6 @@
 Switch DNS
 ==========
 
-For directly setting the DNS servers being used on your machine.
-
-What is this for?
------------------
-
 Say you were using [Google's Public DNS](https://en.wikipedia.org/wiki/Google_Public_DNS) (8.8.8.8) as your main DNS for both IPv4 and IPv6:
 
 ```
