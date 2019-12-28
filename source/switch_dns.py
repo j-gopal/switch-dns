@@ -230,6 +230,5 @@ def main():
 
 
 if __name__ == "__main__":
-    # Note: add more error-handling later
     main()
 
